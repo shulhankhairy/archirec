@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/card_3"
+                    android:layout_below="@+id/card_2"
+                    card_view:cardCornerRadius="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <com.hexa.mobile.archirecon.tools.fonts.font_robotoBold
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="30dp"
+                                android:id="@+id/detail_kebutuhan_text"
+                                android:textSize="15sp"
+                                android:textAllCaps="true"
+                                android:textColor="@android:color/black"
+                                android:layout_marginLeft="10dp"
+                                android:layout_height="wrap_content"
+                                android:text="Detail Informasi Kebutuhan Tanah (Opsional)"/>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_below="@id/detail_kebutuhan_text"
+                                android:id="@+id/garis_4"
+                                android:background="@color/colorAbuAbu"/>
+
+                            <LinearLayout
+                                android:layout_below="@+id/garis_4"
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:layout_height="wrap_content">
+
+                                <com.hexa.mobile.archirecon.tools.fonts.font_robotRegular
+                                    android:id="@+id/text_ruang"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Kebutuhan ruang"
+                                    android:textStyle="bold" />
+                                <RelativeLayout
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginRight="20dp"
+                                    android:background="@drawable/input2_design"
+                                    android:layout_height="wrap_content">
+
+                                    <EditText
+                                        android:id="@+id/kebutuhan_ruang"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@android:color/white"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginBottom="10dp"
+                                        android:hint=""
+                                        android:inputType="text"
+                                        android:padding="8dp"
+                                        android:textSize="15dp"/>
+
+                                </RelativeLayout>
+
+                                <com.hexa.mobile.archirecon.tools.fonts.font_robotRegular
+                                    android:id="@+id/text_denah"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="10dp"
+                                    android:text="Denah rumah eksisting (Upload gambar)"
+                                    android:textStyle="bold" />
+                                <RelativeLayout
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_marginLeft="30dp"
+                                    android:layout_marginRight="20dp"
+                                    android:background="@drawable/input2_design"
+                                    android:layout_height="250dp">
+
+                                    <ImageView
+                                        android:src="@drawable/ic_file_upload_black_24dp"
+                                        android:id="@+id/denah_rumah"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="240dp"
+                                        android:scaleType="fitXY"
+                                        android:background="@android:color/white"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="5dp"
+                                        android:layout_marginTop="3dp"
+                                        android:hint=""
+                                        android:inputType="text"
+                                        android:paddingBottom="10dp"
+                                        android:paddingLeft="10dp"
+                                        android:paddingRight="8dp"
+                                        android:paddingTop="12dp"
+                                        android:textSize="15dp"/>
+
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+
+
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:layout_below="@+id/card_input_pesan"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"/>
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/card_4"
+                    android:layout_below="@+id/card_3"
+                    card_view:cardCornerRadius="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <com.hexa.mobile.archirecon.tools.fonts.font_robotoBold
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="30dp"
+                            android:id="@+id/detail_informasi_tanah"
+                            android:textSize="15sp"
+                            android:textAllCaps="true"
+                            android:textColor="@android:color/black"
+                            android:layout_marginLeft="10dp"
+                            android:layout_height="wrap_content"
+                            android:text="Detail Informasi Gambar Tanah (Opsional)"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@id/detail_kebutuhan_text"
+                            android:id="@+id/garis_8"
+                            android:background="@color/colorAbuAbu"/>
+
+
+                        <LinearLayout
+                            android:layout_below="@+id/garis_8"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+
+                            <com.hexa.mobile.archirecon.tools.fonts.font_robotRegular
+                                android:id="@+id/text_depan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Tampak Depan eksisting (Upload gambar)"
+                                android:textStyle="bold" />
+                            <RelativeLayout
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginRight="20dp"
+                                android:background="@drawable/input2_design"
+                                android:layout_height="250dp">
+
+                                <ImageView
+                                    android:src="@drawable/ic_file_upload_black_24dp"
+                                    android:id="@+id/tampak_depan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="240dp"
+                                    android:scaleType="fitXY"
+                                    android:background="@android:color/white"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="3dp"
+                                    android:hint=""
+                                    android:inputType="text"
+                                    android:paddingBottom="10dp"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="8dp"
+                                    android:paddingTop="12dp"
+                                    android:textSize="15dp"/>
+
+                            </RelativeLayout>
+
+                            <com.hexa.mobile.archirecon.tools.fonts.font_robotRegular
+                                android:id="@+id/text_kanan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Tampak kanan eksisting (Upload gambar)"
+                                android:textStyle="bold" />
+                            <RelativeLayout
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginRight="20dp"
+                                android:background="@drawable/input2_design"
+                                android:layout_height="250dp">
+
+                                <ImageView
+                                    android:src="@drawable/ic_file_upload_black_24dp"
+                                    android:id="@+id/tampak_kanan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="240dp"
+                                    android:scaleType="fitXY"
+                                    android:background="@android:color/white"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="3dp"
+                                    android:hint=""
+                                    android:inputType="text"
+                                    android:paddingBottom="10dp"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="8dp"
+                                    android:paddingTop="12dp"
+                                    android:textSize="15dp"/>
+
+                            </RelativeLayout>
+
+                            <com.hexa.mobile.archirecon.tools.fonts.font_robotRegular
+                                android:id="@+id/text_kiri"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Tampak kiri eksisting (Upload gambar)"
+                                android:textStyle="bold" />
+                            <RelativeLayout
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginRight="20dp"
+                                android:background="@drawable/input2_design"
+                                android:layout_height="250dp">
+
+                                <ImageView
+                                    android:src="@drawable/ic_file_upload_black_24dp"
+                                    android:id="@+id/tampak_kiri"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="240dp"
+                                    android:scaleType="fitXY"
+                                    android:background="@android:color/white"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="3dp"
+                                    android:hint=""
+                                    android:inputType="text"
+                                    android:paddingBottom="10dp"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="8dp"
+                                    android:paddingTop="12dp"
+                                    android:textSize="15dp"/>
+
+                            </RelativeLayout>
+
+
+                            <com.hexa.mobile.archirecon.tools.fonts.font_robotRegular
+                                android:id="@+id/text_jalan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:text="Akses jalan (Upload gambar)"
+                                android:textStyle="bold" />
+                            <RelativeLayout
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginRight="20dp"
+                                android:background="@drawable/input2_design"
+                                android:layout_height="250dp">
+
+                                <ImageView
+                                    android:src="@drawable/ic_file_upload_black_24dp"
+                                    android:id="@+id/tampak_jalan"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="240dp"
+                                    android:scaleType="fitXY"
+                                    android:background="@android:color/white"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="3dp"
+                                    android:hint=""
+                                    android:inputType="text"
+                                    android:paddingBottom="10dp"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="8dp"
+                                    android:paddingTop="12dp"
+                                    android:textSize="15dp"/>
+
+                            </RelativeLayout>
+                            <TextView
+                                android:layout_below="@+id/card_input_pesan"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp"/>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <TextView
+                    android:layout_below="@+id/card_input_pesan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="50dp"/>
+
+            </LinearLayout>
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/btn_continue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="SUBMIT"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+</RelativeLayout>

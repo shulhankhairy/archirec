@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_artikel"
+            android:icon="@drawable/ic_library_books_black_24dp"
+            android:title="Artikel" />
+
+        <item
+            android:id="@+id/nav_pesan"
+            android:icon="@drawable/ic_poll_black_24dp"
+            android:title="Pemesanan Desain" />
+
+        <item
+            android:id="@+id/nav_list_pemesanan"
+            android:icon="@drawable/ic_poll_black_24dp"
+            android:title="List Pemesanan" />
+
+        <item
+            android:id="@+id/nav_user"
+            android:icon="@drawable/ic_contacts_black_24dp"
+            android:title="Managemen User" />
+
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_phone_black_24dp"
+            android:title="Hubungi Kami" />
+
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_arrow_back_black_24dp"
+            android:title="Logout" />
+    </group>
+
+
+
+</menu>

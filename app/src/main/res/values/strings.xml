@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">archirecon</string>
+    <string name="fa_next">&#xf105;</string>
+    <string name="fa_left">&#xf104;</string>
+    <string name="fa_gunting">&#xf0c4;</string>
+    <string name="fa_cash">&#xf09d;</string>
+    <string name="fa_dolar">&#xf155;</string>
+    <string name="fa_calendar">&#xf073;</string>
+    <string name="fa_jam">&#xf017;</string>
+    <string name="fa_piala">&#xf091;</string>f
+    <string name="fa_refresh">&#xf021;</string>
+    <string name="font">fonts/Comfortaa-Regular.ttf</string>
+    <string name="fa_trash">&#xf1f8;</string>
+    <string name="fa_chart">&#xf07a;</string>
+    <string name="fa_time">&#xf017;</string>
+    <string name="fa_home">&#xf015;</string>
+    <string name="fa_pick">&#xf291;</string>
+    <string name="fa_wallet">&#xf283;</string>
+    <string name="fa_email">&#xf0e0;</string>
+    <string name="fa_password">&#xf023;</string>
+    <string name="fa_user">&#xf007;</string>
+    <string name="fa_user_2">&#xf007;</string>
+    <string name="fa_close">&#xf00d;</string>
+    <string name="fa_cek">&#xf00c;</string>
+    <string name="fa_phone">&#xf095;</string>
+    <string name="fa_setting">&#xf013;</string>
+    <string name="fa_history">&#xf1da;</string>
+    <string name="fa_list">&#xf03a;</string>
+    <string name="fa_off">&#xf011;</string>
+    <string name="fa_maps">&#xf041;</string>
+    <string name="fa_qrcode">&#xf029;</string>
+    <string name="fa_plus">&#xf0fe;</string>
+    <string name="title_activity_navigationdrawer">Navigationdrawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <array name="jenis_pesan">
+        <item>Pilih Jenis Pesanan Anda</item>
+        <item>Bangunan Umum</item>
+        <item>Rumah</item>
+        <item>Perumahan</item>
+        <item>Pesantren</item>
+        <item>Masjid</item>
+        <item>Sekolah</item>
+    </array>
+
+    <string name="str_pesanan">Silahkan identifikasi kebutuhan anda dan detail produk kami dibawah ini</string>
+</resources>

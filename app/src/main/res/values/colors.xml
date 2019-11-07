@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffc107</color>
+    <color name="colorPrimaryDark">#ffc107</color>
+    <color name="colorAccent">#ffc107</color>
+    <color name="colorMerah">#ff0d00</color>
+    <color name="colorBiru">#0027ff</color>
+    <color name="colorPutih">#ffffff</color>
+    <color name="colorHitam">#000</color>
+    <color name="colorGreen">#0f9100</color>
+    <color name="colorAbuAbuTipis">#e7e0e0</color>
+    <color name="colorAbuAbu">#bfbbbb</color>
+    <color name="colorKuning">#fffb00</color>
+    <color name="colorOrange">#ffc107</color>
+</resources>

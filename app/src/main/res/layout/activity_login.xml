@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPutih">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/background_logo">
+
+        <ImageView
+            android:id="@+id/logo_login"
+            android:layout_width="400dp"
+            android:src="@drawable/logo"
+            android:layout_height="500dp"
+            android:layout_centerInParent="true"
+            android:padding="20dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/card"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/background_logo"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:id="@+id/lin"
+            android:orientation="vertical"
+            android:layout_centerVertical="true">
+
+            <com.hexa.mobile.archirecon.tools.fonts.font_robotoBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:id="@+id/info_login"
+                android:text=" - ARCHIRECON -" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="15dp">
+
+                <com.hexa.mobile.archirecon.tools.fonts.EditText_fontRegularRoboto
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/username"
+                    android:background="@drawable/input_design"
+                    android:layout_toRightOf="@id/email_icon"
+                    android:layout_marginTop="20dp"
+                    android:hint="Email"
+                    android:textSize="15dp"
+                    android:inputType="text"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="48dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="12dp">
+                    <requestFocus/>
+                </com.hexa.mobile.archirecon.tools.fonts.EditText_fontRegularRoboto>
+
+                <com.hexa.mobile.archirecon.tools.fonts.font_awesome
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/email_icon"
+                    android:text="@string/fa_user"
+                    android:textColor="@color/colorOrange"
+                    android:layout_gravity="bottom"
+                    android:padding="15dp"
+                    android:textSize="20dp"
+                    />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp">
+
+
+                <com.hexa.mobile.archirecon.tools.fonts.EditText_fontRegularRoboto
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="48dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="12dp"
+                    android:id="@+id/password"
+                    android:background="@drawable/input_design"
+                    android:layout_toRightOf="@id/password_icon"
+                    android:inputType="textPassword"
+                    android:textSize="15dp"
+                    android:hint="Password"
+                    />
+
+                <com.hexa.mobile.archirecon.tools.fonts.font_awesome
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/password_icon"
+                    android:text="@string/fa_password"
+                    android:textColor="@color/colorOrange"
+                    android:gravity="center"
+                    android:layout_marginLeft="3dp"
+                    android:padding="15dp"
+                    android:textSize="20dp"/>
+            </FrameLayout>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/btn_login"
+                android:text="LOGIN"
+                android:textColor="@color/colorPutih"
+                android:background="@color/colorOrange">
+            </Button>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+        <com.hexa.mobile.archirecon.tools.fonts.font_robotRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/intro"
+            android:gravity="center"
+            android:text="Belum Punya Akun ? " />
+
+        <com.hexa.mobile.archirecon.tools.fonts.font_robotRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/daftar"
+            android:layout_toRightOf="@+id/intro"
+            android:textColor="@color/colorOrange"
+            android:text="Daftar Disini" />
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

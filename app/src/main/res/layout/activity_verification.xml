@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/login_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPutih">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/background_logo">
+
+            <ImageView
+                android:id="@+id/logo_login"
+                android:layout_width="400dp"
+                android:src="@drawable/logo"
+                android:layout_height="500dp"
+                android:layout_centerInParent="true"
+                android:padding="20dp"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/card"
+            android:layout_below="@+id/background_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:id="@+id/lin"
+                android:orientation="vertical"
+                android:layout_centerVertical="true">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp">
+
+                    <com.hexa.mobile.archirecon.tools.fonts.EditText_fontRegularRoboto
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:id="@+id/kode"
+                        android:background="@drawable/input_design"
+                        android:layout_toRightOf="@id/user_icon"
+                        android:layout_marginTop="20dp"
+                        android:hint="Kode Verifikasi"
+                        android:textSize="15dp"
+                        android:inputType="text"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="12dp">
+                        <requestFocus/>
+                    </com.hexa.mobile.archirecon.tools.fonts.EditText_fontRegularRoboto>
+
+                </FrameLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:id="@+id/btn_daftar"
+                    android:text="Submit"
+                    android:textColor="@color/colorPutih"
+                    android:background="@color/colorOrange">
+                </Button>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="11dp"
+                        android:textStyle="bold"
+                        android:text="Silahkan Check Email Anda untuk mendapatkan kode Verifikasi"/>
+
+
+                </FrameLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+</ScrollView>

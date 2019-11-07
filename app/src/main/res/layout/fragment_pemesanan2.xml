@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/card_2"
+                android:layout_below="@+id/card_input_pesan"
+                card_view:cardCornerRadius="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.hexa.mobile.archirecon.tools.fonts.font_robotoBold
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="30dp"
+                            android:id="@+id/detail_tanah_text"
+                            android:textSize="15sp"
+                            android:textAllCaps="true"
+                            android:textColor="@android:color/black"
+                            android:layout_marginLeft="10dp"
+                            android:layout_height="match_parent"
+                            android:text="Detail Tanah (Harus Diisi)"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@id/detail_tanah_text"
+                            android:id="@+id/garis_3"
+                            android:background="@color/colorAbuAbu"/>
+
+                        <com.hexa.mobile.archirecon.tools.fonts.font_robotRegular
+                            android:id="@+id/text_panjang"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="25dp"
+                            android:text="Panjang lahan "
+                            android:layout_below="@+id/garis_3"
+                            android:textStyle="bold" />
+
+                        <com.hexa.mobile.archirecon.tools.fonts.EditText_fontRegularRoboto
+                            android:id="@+id/panjang"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_toRightOf="@+id/text_panjang"
+                            android:layout_below="@+id/garis_3"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/input2_design"
+                            android:hint=""
+                            android:layout_toLeftOf="@id/text_meter"
+                            android:inputType="number"
+                            android:paddingBottom="15dp"
+                            android:paddingLeft="10dp"
+                            android:gravity="center"
+                            android:paddingRight="8dp"
+                            android:paddingTop="12dp"
+                            android:textSize="15dp">
+                            <requestFocus />
+                        </com.hexa.mobile.archirecon.tools.fonts.EditText_fontRegularRoboto>
+
+                        <com.hexa.mobile.archirecon.tools.fonts.font_robotRegular
+                            android:id="@+id/text_meter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="Meter"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="25dp"
+                            android:layout_below="@+id/garis_3"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.hexa.mobile.archirecon.tools.fonts.font_robotRegular
+                            android:id="@+id/text_lebar"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="30dp"
+                            android:text="Lebar lahan"
+                            android:textStyle="bold" />
+
+                        <com.hexa.mobile.archirecon.tools.fonts.EditText_fontRegularRoboto
+                            android:id="@+id/lebar"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_toLeftOf="@id/text_meter_lebar"
+                            android:layout_toRightOf="@+id/text_lebar"
+                            android:background="@drawable/input2_design"
+                            android:gravity="center"
+                            android:hint=""
+                            android:inputType="number"
+                            android:paddingBottom="15dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="8dp"
+                            android:paddingTop="12dp"
+                            android:textSize="15dp">
+                        </com.hexa.mobile.archirecon.tools.fonts.EditText_fontRegularRoboto>
+
+                        <com.hexa.mobile.archirecon.tools.fonts.font_robotRegular
+                            android:id="@+id/text_meter_lebar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="30dp"
+                            android:text="Meter"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.hexa.mobile.archirecon.tools.fonts.font_robotRegular
+                            android:id="@+id/text_lebar_lahan"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="30dp"
+                            android:text="Lebar Akses Jalan"
+                            android:textStyle="bold" />
+
+                        <com.hexa.mobile.archirecon.tools.fonts.EditText_fontRegularRoboto
+                            android:id="@+id/lebar_lahan"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_toLeftOf="@id/text_meter_lebar_lahan"
+                            android:layout_toRightOf="@+id/text_lebar_lahan"
+                            android:background="@drawable/input2_design"
+                            android:gravity="center"
+                            android:hint=""
+                            android:inputType="number"
+                            android:paddingBottom="15dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="8dp"
+                            android:paddingTop="12dp"
+                            android:textSize="15dp">
+                        </com.hexa.mobile.archirecon.tools.fonts.EditText_fontRegularRoboto>
+
+                        <com.hexa.mobile.archirecon.tools.fonts.font_robotRegular
+                            android:id="@+id/text_meter_lebar_lahan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="30dp"
+                            android:text="Meter"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="20dp">
+
+                        <com.hexa.mobile.archirecon.tools.fonts.font_robotRegular
+                            android:id="@+id/text_hadap"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="30dp"
+                            android:text="Arah hadap lahan"
+                            android:textStyle="bold" />
+
+                        <com.hexa.mobile.archirecon.tools.fonts.EditText_fontRegularRoboto
+                            android:id="@+id/arah_hadap"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_below="@+id/text_hadap"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/input2_design"
+                            android:hint=""
+                            android:layout_marginTop="20dp"
+                            android:inputType="text"
+                            android:paddingBottom="15dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="8dp"
+                            android:paddingTop="12dp"
+                            android:textSize="15dp">
+                        </com.hexa.mobile.archirecon.tools.fonts.EditText_fontRegularRoboto>
+
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/btn_continue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="LANJUTKAN"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+</RelativeLayout>
